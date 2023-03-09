@@ -46,13 +46,13 @@ const HomeScreen = () => {
           source={HeroImage}
           className="w-full h-full object-cover mt-10"
         />
-        <View className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 rounded-full border-[#00bcc9] items-center justify-center">
-          <TouchableOpacity>
-            <Animatable.View animation={"pulse"} easing="ease-in-out" iterationCount={"infinite"} className="w-20 h-20 items-center justify-center rounded-full bg-[#00bcc9]">
-              <Text className="text-gray-50 text-[36px] font-semibold">Go</Text>
-            </Animatable.View>
-          </TouchableOpacity>
-        </View>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("Discover")}
+          className="absolute bottom-20 w-24 h-24 border-l-2 border-r-2 border-t-4 rounded-full border-[#00bcc9] items-center justify-center">
+          <Animatable.View animation={"pulse"} easing="ease-in-out" iterationCount={"infinite"} className="w-20 h-20 items-center justify-center rounded-full bg-[#00bcc9]">
+            <Text className="text-gray-50 text-[36px] font-semibold">Go</Text>
+          </Animatable.View>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
