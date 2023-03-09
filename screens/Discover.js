@@ -6,6 +6,9 @@ import { useNavigation } from '@react-navigation/native';
 import { Avatar, Hotels, Attractions, Restaurants } from '../assets';
 import { API_KEY } from '@env';
 import MenuContainer from '../components/MenuContainer';
+import { TouchableOpacity } from 'react-native';
+import { FontAwesome } from '@expo/vector-icons';
+import ItemCardContainer from '../components/ItemCardContainer';
 
 const Discover = () => {
 
@@ -73,6 +76,22 @@ const Discover = () => {
             type={type}
             setType={setType}
           />
+        </View>
+
+        {/* List of places */}
+        <View>
+          <View className="flex-row items-center justify-between px-8 mt-8">
+            <Text className="text-[#2c7379] text-[28px] font-bold">Top Tips</Text>
+            <TouchableOpacity className="flex-row items-center justify-center space-x-2">
+              <Text className="text-[#a0c4c7] text-[20px] font-bold">Explore</Text>
+              <FontAwesome name="long-arrow-right" size={24} color="#a0c4c7" />
+            </TouchableOpacity>
+          </View>
+
+          <View className="px-4 mt-8 flex-row items-center justify-evenly flex-wrap">
+            <ItemCardContainer key={"101"} imageSrc={"https://cdn.pixabay.com/photo/2023/03/02/03/01/bird-7824442__340.jpg"} title="Something longer then" location="Doha extra log location" />
+            <ItemCardContainer key={"102"} imageSrc={"https://cdn.pixabay.com/photo/2023/03/03/17/36/peafowl-7828140__340.jpg"} title="Sample" location="Katar" />
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
