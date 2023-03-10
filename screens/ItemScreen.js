@@ -2,7 +2,6 @@ import { View, Text, SafeAreaView, Image, ScrollView, TouchableOpacity } from 'r
 import React, { useLayoutEffect } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { FontAwesome5, MaterialIcons } from '@expo/vector-icons';
-// import * as Linking from 'expo-linking';
 import { A } from '@expo/html-elements';
 
 const ItemScreen = ({ route }) => {

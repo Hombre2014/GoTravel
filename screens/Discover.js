@@ -41,7 +41,7 @@ const Discover = () => {
       setMainData(data);
       setInterval(() => {
         setIsLoading(false);
-      }, 2000);
+      }, 3000);
     });
   }, [bl_lat, bl_lng, tr_lat, tr_lng, type]);
 
