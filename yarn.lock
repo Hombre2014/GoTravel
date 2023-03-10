@@ -1237,6 +1237,11 @@
     tmp "^0.0.33"
     tslib "^2.4.0"
 
+"@expo/html-elements@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@expo/html-elements/-/html-elements-0.4.1.tgz#bd77b1ab6d0a30e75836bdd297e5bb8e42dac42f"
+  integrity sha512-J0vXBvc70peeozMo7HQY1Dv3czkNkqBntw0J1rGjrSXzTWYiAtuBNS4jMg/LoQ+z8mok0RDOh+zF2pR+QoGmtg==
+
 "@expo/image-utils@0.3.22":
   version "0.3.22"
   resolved "https://registry.yarnpkg.com/@expo/image-utils/-/image-utils-0.3.22.tgz#3a45fb2e268d20fcc761c87bca3aca7fd8e24260"
@@ -1858,6 +1863,11 @@
   version "18.14.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-18.14.6.tgz#ae1973dd2b1eeb1825695bb11ebfb746d27e3e93"
   integrity sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==
+
+"@types/qs@^6.9.7":
+  version "6.9.7"
+  resolved "https://registry.yarnpkg.com/@types/qs/-/qs-6.9.7.tgz#63bb7d067db107cc1e457c303bc25d511febf6cb"
+  integrity sha512-FGa1F62FT09qcrueBA6qYTrJPVDzah9a+493+o2PCXsesWHIn27G98TsSMs3WPNbZIEj4+VJf6saSFpvD+3Zsw==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.1"
@@ -3255,6 +3265,17 @@ expo-keep-awake@~12.0.1:
   version "12.0.1"
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-12.0.1.tgz#19c5ab55391394ded3f6c262b0707c7140658a11"
   integrity sha512-hqeCnb4033TyuZaXs93zTK7rjVJ3bywXATyMmKmKkLEsH2PKBAl/VmjlCOPQL/2Ncqz6aj7Wo//tjeJTARBD4g==
+
+expo-linking@~4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/expo-linking/-/expo-linking-4.0.1.tgz#ddfd5194beeba661dd43aec87f2cbef48bf6e09e"
+  integrity sha512-geRMmKLhtaCigptRzOGW8ZZJKGl47gyu0KFtQOtGf26ELxyt/AietgQjyzF24i7cVD08TnWUJDHgWZkpRHTa7g==
+  dependencies:
+    "@types/qs" "^6.9.7"
+    expo-constants "~14.2.0"
+    invariant "^2.2.4"
+    qs "^6.11.0"
+    url-parse "^1.5.9"
 
 expo-modules-autolinking@1.1.2:
   version "1.1.2"
@@ -5770,6 +5791,13 @@ qs@6.11.0:
   version "6.11.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.0.tgz#fd0d963446f7a65e1367e01abd85429453f0c37a"
   integrity sha512-MvjoMCJwEarSbUYk5O+nmoSzSutSsTwF85zcHPQ9OrlFoZOYIjaqBAJIqIXjptyD5vThxGq52Xu/MaJzRkIk4Q==
+  dependencies:
+    side-channel "^1.0.4"
+
+qs@^6.11.0:
+  version "6.11.1"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.11.1.tgz#6c29dff97f0c0060765911ba65cbc9764186109f"
+  integrity sha512-0wsrzgTz/kAVIeuxSjnpGC56rzYtr6JT/2BwEvMaPhFIoYa1aGO8LbzuU1R0uUYQkLpWBTOj0l/CLAJB64J6nQ==
   dependencies:
     side-channel "^1.0.4"
 
