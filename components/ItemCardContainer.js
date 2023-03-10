@@ -1,7 +1,5 @@
-import { View, Text } from 'react-native';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
 import React from 'react';
-import { TouchableOpacity } from 'react-native';
-import { Image } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 const ItemCardContainer = ({ imageSrc, title, location }) => {
@@ -13,7 +11,8 @@ const ItemCardContainer = ({ imageSrc, title, location }) => {
       />
       <View>
         <Text className="text-[#428288] text-[18px] font-bold">
-          {title?.length > 14 ? `${title.slice(0, 14)}..` : title}</Text>
+          {title?.length > 14 ? `${title.slice(0, 14)}..` : title}
+        </Text>
       </View>
 
       <View className="flex-row items-center space-x-1">
