@@ -23,6 +23,14 @@ This is a mobile app that allows users to explore attractions, hotels, and resta
 - Frameworks: React Native, Tailwind CSS
 - Google places API
 
+## Features
+
+- Explore attractions, hotels, and restaurants in your city or any city in the world
+
+## Screenshots
+
+![GoTravel](./assets/Sreenshots.jpg)
+
 ## Deployment
 
 - All the files necessary for deployment are in the /dist folder
