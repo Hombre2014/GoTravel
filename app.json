@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "GoTravel",
-    "slug": "GoTravel",
+    "slug": "go-travel",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/restaurants.png",
+    "icon": "./assets/icons.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/restaurants.png",
@@ -19,10 +19,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.hombre2014.gotravel"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "0bd078c5-9549-402c-aae4-77c1032e1955"
+      }
+    },
+    "owner": "hombre2014"
   }
 }
